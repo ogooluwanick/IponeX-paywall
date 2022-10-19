@@ -1,0 +1,221 @@
+@font-face {
+        font-family: 'SemiBold600';
+        src: url('./Barlow_Semi_Condensed/BarlowSemiCondensed-SemiBold.ttf');
+}
+@font-face {
+        font-family: 'Regular400';
+        src: url('./Fira_Sans/FiraSans-Regular.ttf');
+}
+
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+}
+
+
+*{
+        font-family: 'Lato', sans-serif;    
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        scroll-behavior: smooth;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+
+body{
+        background-color: #fafafa;
+        background-image: url("background.jpeg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center top; 
+        background-size: cover;
+
+        width: 100vw;
+        height: 100vh;
+}
+
+#closeIcon{
+        margin: 8px 0 0 10px;
+}
+
+main{
+        width: 100vw;
+
+
+}
+
+h1{
+        color: rgba(255, 255, 255, 1);
+        text-align: center;
+        font-family: "SemiBold600" ,serif;
+        font-size: 40px;
+        filter: drop-shadow(0 3px 15px rgba(31, 38, 62, 1));
+        margin-top: 55px;
+
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+}
+
+
+.rateSection{
+        margin-top: 2.3rem;
+        text-align: center;
+
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: backwards;
+        animation-delay: .5s;
+
+}
+
+@keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+}
+
+.rateHeading{
+        font-family: "Regular400";
+        font-size: 16px;
+        margin-bottom: 8px;
+}
+
+.rating{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #F85036;
+        gap: 8px;
+
+        
+}
+.stars{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+}
+
+.rating>span{
+        margin-top: 5px;
+        font-size: 15px;
+        font-family: "Regular400" ,serif;
+
+}
+
+.featuresSection{
+        margin-left:  44px;
+        margin-top: 70px;
+        margin-bottom: 60px;
+}
+
+.featuresSection>div{
+        display: flex;
+       
+        gap: 20px;
+        margin-bottom: 30px;
+}
+
+.featuresHeader{
+        font-family: "SemiBold600" ,serif;
+        font-size: 19px;
+}
+
+.featuresDetail{
+        font-family: "Regular400" ,serif;
+        font-size: 15px;
+        color: #13D68F;
+
+}
+
+
+.checkoutSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+button{
+        border-radius: 45.24px;
+        background-color: #13D68F;
+        text-align: center;
+
+        width: 330px;
+        height: 63px;
+        margin-bottom: 23px;
+}
+
+#btnHead{
+        color:#FFFFFF ;
+        margin-bottom: 2px;
+}
+
+#btnSub{
+        color: #D0F7E9;
+}
+
+#checkoutHeader{
+        font-family: "Regular400" ,serif;
+        font-size: 13px;
+        color: #1E2333;
+        margin-bottom: 10px;
+}
+
+#checkoutSub{
+        font-family: "Regular400" ,serif;
+        font-size: 13px;
+        margin-right: 21px;
+        color: #414141;
+        line-height: 20.28px;
+}
+
+#Xitem{
+        margin-top: 10px;
+}
+
+.revealnimation{
+        animation: reveal 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+}
+
+.reveal01{animation-delay: 0;}
+.reveal02{animation-delay: 500ms;}
+.reveal03{animation-delay: 1s;}
+
+@keyframes reveal {
+        0% {
+          opacity: 0 ;
+          transform: translateY(100%);
+        }
+
+        30%{
+          opacity: .5;
+        }
+        
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-zoom {animation:zoom 0.6s}
+      
+      @keyframes zoom{
+        from{transform:scale(0)} 
+        to{transform:scale(1)}
+}
